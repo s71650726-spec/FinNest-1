@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism utilities */
+.glass-effect {
+  @apply bg-backgroundGlass backdrop-blur-md rounded-lg border border-white border-opacity-20;
+}
+.glass-effect-dark {
+  @apply bg-backgroundGlassDark backdrop-blur-md rounded-lg border border-white border-opacity-10;
+}
+
+/* Apple-style UI utilities */
+.apple-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.apple-button {
+  @apply bg-primary text-white rounded-full px-6 py-3 font-semibold shadow-md hover:bg-blue-700 transition;
+}
